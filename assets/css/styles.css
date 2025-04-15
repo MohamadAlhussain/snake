@@ -1,0 +1,75 @@
+:root {
+    --canvas-color: #16697a;
+    --body-color: #031926;
+    --snake-color: #f99046;
+    --fruit-color: #8c1c13;
+    --border-color: #8c1c13;
+    --button-color: #8c1c13;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--body-color);
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: var(--border-color);
+    font-size: 25px;
+}
+
+#gameCanvas {
+    border: 2px solid var(--border-color);
+    background-color: var(--canvas-color);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #031926;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    border: none;
+    color: var(--canvas-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--canvas-color);
+    color: var(--body-color);
+}
+
+@keyframes flash {
+    0% { background-color: rgba(249, 144, 70 ,0.3) }
+    50% { background-color: rgba(248, 248, 248, 0.3); }
+    100% { background-color: rgba(249, 144, 70,0.3) }
+}
+
+.flash {
+    animation: flash 0.4s ease-in-out;
+}
