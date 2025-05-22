@@ -2,12 +2,12 @@
 
 A browser-based Snake Game built using HTML5 Canvas and JavaScript.
 
-# Technologies Used
+## Technologies Used
 - HTML5 Canvas
 - JavaScript
 - CSS
 
-# Features
+## Features
 - Arrow key controls
 - Growing snake on food collection
 - Score tracking
